@@ -1,5 +1,6 @@
 var express = require('express')
 var app = express();
+
 app.use(express.static(__dirname + '/public'));
 
 app.get('/teste',function (req,resp){
@@ -11,9 +12,6 @@ app.listen(10000, function() {
     console.log("servidor no ar");
   
 });
-
-
-// -----------------------------------
 
 const WebSocket = require('ws');
 var vetor_conexoes=[];
